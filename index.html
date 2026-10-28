@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#4f46e5">
+  <meta name="description" content="QuizPath.in — Free quizzes for students and exam preparation.">
+  <title>QuizPath.in | 100% Free</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="brand">QuizPath.in <span>100% FREE</span></div>
+    <p>Practice smarter. Learn every day.</p>
+  </header>
+
+  <div class="layout">
+    <aside class="ad">ADVERTISEMENT<div>Your ad here</div></aside>
+
+    <main>
+      <section class="hero">
+        <h1>Choose. Play. Learn.</h1>
+        <p>Free quizzes with easy explanations.</p>
+      </section>
+
+      <section class="panel" id="setup">
+        <h2>Start your free quiz</h2>
+
+        <label>Board / Exam
+          <select id="board">
+            <option>CBSE</option>
+            <option>Bihar Board</option>
+            <option>UP Board</option>
+            <option>MP Board</option>
+            <option>Jharkhand Board</option>
+            <option>Rajasthan Board</option>
+            <option>Maharashtra Board</option>
+            <option>West Bengal Board</option>
+            <option>All State Boards</option>
+            <option>Competitive Exams</option>
+          </select>
+        </label>
+
+        <label>Class / Level
+          <select id="level">
+            <option>Class 10</option>
+            <option>Class 9</option>
+            <option>Class 8</option>
+            <option>Class 12</option>
+            <option>General Practice</option>
+          </select>
+        </label>
+
+        <label>Subject
+          <select id="subject">
+            <option>All Subjects</option>
+            <option>Science</option>
+            <option>Maths</option>
+            <option>Social Science</option>
+            <option>Hindi</option>
+            <option>English</option>
+            <option>General Knowledge</option>
+            <option>Reasoning</option>
+          </select>
+        </label>
+
+        <label>Questions per quiz
+          <select id="count">
+            <option>10</option>
+            <option>15</option>
+            <option>20</option>
+            <option>25</option>
+          </select>
+        </label>
+
+        <button class="primary" id="start">Start Free Quiz</button>
+        <p class="muted">No payment or account required.</p>
+      </section>
+
+      <section class="panel hidden" id="quiz">
+        <div class="quiz-head">
+          <span id="counter">Question 1</span>
+          <span id="score">Score: 0</span>
+        </div>
+        <div class="progress"><div id="bar"></div></div>
+        <h2 id="question"></h2>
+        <div id="options"></div>
+        <div id="explanation" class="explanation hidden"></div>
+        <button class="primary" id="next" disabled>Next Question</button>
+        <button class="secondary" id="exit">Exit Quiz</button>
+      </section>
+
+      <section class="panel hidden" id="result">
+        <h2>Quiz complete!</h2>
+        <p id="resultText"></p>
+        <p id="resultTip"></p>
+        <button class="primary" id="again">Try Another Quiz</button>
+      </section>
+
+      <section class="subjects">
+        <h2>Explore Subjects</h2>
+        <div class="tiles">
+          <button data-subject="Maths">➗ Maths</button>
+          <button data-subject="Science">🔬 Science</button>
+          <button data-subject="Social Science">🌍 Social Science</button>
+          <button data-subject="Hindi">📖 Hindi</button>
+          <button data-subject="English">🔤 English</button>
+          <button data-subject="General Knowledge">🧠 GK</button>
+        </div>
+      </section>
+    </main>
+
+    <aside class="ad">ADVERTISEMENT<div>Your ad here</div></aside>
+  </div>
+
+  <footer>
+    <strong>QuizPath.in</strong> — Free learning for everyone.
+    <p>Support: <a href="mailto:heluckyx7@gmail.com">heluckyx7@gmail.com</a></p>
+    <small>Ad spaces are placeholders. Actual ads require approval from an advertising provider.</small>
+  </footer>
+
+  <script src="questions.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
