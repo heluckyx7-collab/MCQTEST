@@ -1,4 +1,5 @@
-window.QUIZ_QUESTIONS = [
+window.QUIZ_QUESTIONS = 
+  [
   {
     board: "All", level: "Class 10", subject: "Science",
     question: "पौधे अपना भोजन किस प्रक्रिया से बनाते हैं?",
