@@ -61,6 +61,31 @@
     return shuffle(fresh).slice(0, count);
   }
 
+function getQuestions() {
+  const selectedBoard = document.getElementById("board").value;
+  const selectedLevel = document.getElementById("level").value;
+  const selectedSubject = document.getElementById("subject").value;
+
+  const allQuestions = window.QUIZ_QUESTIONS || [];
+
+  return allQuestions.filter((q) => {
+    const boardMatch =
+      selectedBoard === "All" ||
+      q.board === "All" ||
+      q.board === selectedBoard;
+
+    const levelMatch =
+      selectedLevel === "All" ||
+      q.level === selectedLevel;
+
+    const subjectMatch =
+      q.subject?.trim().toLowerCase() ===
+      selectedSubject.trim().toLowerCase();
+
+    return boardMatch && levelMatch && subjectMatch;
+  });
+}
+
   function startQuiz() {
     questions = getQuestions();
 
